@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import '_variables';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--roboto);
+  color: var(--font-color);
+}
+
+#app {
+  height: 100%;
+  padding: 20px 0;
+  background:linear-gradient(0deg, var(--background-gradient-start), var(--background-gradient-end)) no-repeat;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading--main {
+  font-size: 6vh;
+  margin: 50px 0 40px 0;
+}
+
+.logo {
+  display: block;
+  margin: 10px auto;
+}
+
+.button {
+  height: 45px;
+  width: 200px;
+  border-radius: 3px;
+  color: var(--font-color);
+  background: #9B51E0;
+  font-size: 4vh;
+  font-family: var(--roboto);
+  box-shadow: var(--shadow-color) 0px 2px 3px;
+  border: none;
+  margin: 10px 0;
+
+  &:hover {
+    background: darken(#9B51E0, 5%);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.button--form {
+  width: 70vw;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form--center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form--top--margin--large {
+  margin-top: 25vh;
+}
+
+.label {
+  margin-bottom: 3vh;
+  font-size: 4vh;
+}
+
+.input {
+    height: 30px;
+    width: 70vw;
+    border-radius: 2px;
+    background: #EDCCF9;
+    box-shadow: inset var(--shadow-color) 2px 3px 8px;
+    border: none;
+}
